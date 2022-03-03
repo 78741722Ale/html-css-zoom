@@ -1,4 +1,7 @@
-/* Colori principali delle macro aree */
+/* CONCLUSA */
+/*#region Macroaree */
+
+/* dimensioni principali delle macro aree */
 :root {
   --FooterDim: 1440px;
   --HeaderDim: 1440px;
@@ -46,8 +49,21 @@ footer {
   height: var(--Container_H);
 }
 
-/* Colori dei testi e delle icone */
+/* Item interno a ogni colonna */
 
+.img_text {
+  font-weight: 200;
+  width: 230px;
+  height: calc(100% / 5);
+  position: relative;
+  margin-bottom: 10px;
+  color: var(--Text_primary);
+  font-size: 0.85rem;
+}
+/*#endregion */
+
+/* CONCLUSA */
+/*#region Palette colori */
 :root {
   --MainColor: rgba(0, 0, 0, 1);
   --FooterColor: rgba(34, 34, 34, 1);
@@ -56,8 +72,10 @@ footer {
   --Text_Contain: rgba(107, 118, 127, 1);
   --Text_Success: rgba(75, 200, 0, 1);
 }
+/*#endregion */
 
-/* Proprietà Display flex */
+/* CONCLUSA */
+/*#region Proprietà flex  */
 
 .center {
   justify-content: center;
@@ -112,11 +130,6 @@ footer {
   column-gap: 5px;
 }
 
-.End {
-  padding: 0px 20px 0px 20px;
-  color: red;
-}
-
 .foot_box {
   padding: 0px 10px 0px 10px;
   width: max-content;
@@ -125,6 +138,11 @@ footer {
   align-items: center;
   color: var(--Text_primary);
 }
+
+/*#endregion */
+
+/* CONCLUSA */
+/*#region Proprietà Float */
 
 /* Proprietà Float  */
 
@@ -143,43 +161,30 @@ footer {
   font-weight: 100px;
   width: max-content;
 }
-
 .col-20 {
-  height: 80%;
+  height: 70%;
 }
-
 .col-20 i {
   padding: 0px 10px 0px 10px;
 }
-
 .col-75 {
   justify-content: flex-start;
   align-items: center;
-  height: 80%;
-  margin-left: 15%;
-  padding: 0px 10px 0px 10px;
+  height: 70%;
+  margin-left: 20%;
+  padding: 0px 5px 0px 5px;
 }
-
 .col-75 div {
   padding-right: 5px;
 }
-
 .col-75 i {
   padding-left: 5px;
 }
 
-/* Item interno a ogni colonna */
+/*#endregion  */
 
-.img_text {
-  font-weight: 200;
-  width: 230px;
-  height: calc(100% / 5);
-  position: relative;
-  margin-bottom: 10px;
-  color: var(--Text_primary);
-  font-size: 0.85rem;
-}
-
+/* CONCLUSA */
+/*#region Regole immagini e testo  */
 /* Testo descrittivo interno a immagini incolonnate */
 
 .desc {
@@ -190,17 +195,22 @@ footer {
   bottom: 0%;
   left: 0%;
 }
-
 .img_text img {
   width: 100%;
   height: 100%;
 }
-
+.img_text i,
+.img_text span {
+    font-size: 0.9rem;
+}
 .img_text i {
   padding-left: 5px;
   padding-right: 5px;
 }
-
 .img_text span {
   padding-right: 10px;
+  font-weight: 400;
 }
+/*#endregion */
+
+
