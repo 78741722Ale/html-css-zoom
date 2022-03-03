@@ -1,64 +1,82 @@
 /* Regola comune CSS */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* Margini e Padding comuni */
 
 .pt_1 {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .pb_1 {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .pl_1 {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 .pl_2 {
-    padding-left: 2rem;
+  padding-left: 2rem;
 }
 
 .pr_1 {
-    padding-right: 1rem;
+  padding-right: 1rem;
 }
 
 .pr_2 {
-    padding-right: 2rem;
+  padding-right: 2rem;
 }
 
 /* Margini */
 
 .mt_1 {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .mb_1 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .ml_1 {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .ml_2 {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .mr_1 {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .mr_2 {
-    margin-right: 2rem;
+  margin-right: 2rem;
 }
 
 .mr_0 {
-    margin: auto;
+  margin: auto;
 }
 
+.pinco img {
+  padding-left: 2px;
+  padding-right: 3px;
+  width: 100%;
+  height: 100%;
+}
+.flex {
+  display: flex;
+}
+
+.pinco i {
+  padding-left: 2px;
+}
+
+.item_column {
+  height: 100%;
+  flex-direction: column;
+}
