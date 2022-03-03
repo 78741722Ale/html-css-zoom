@@ -3,12 +3,12 @@
   --FooterDim: 1440px;
   --HeaderDim: 1440px;
   --Header_Heigth: 5vh;
-  --Footer_Heigth: 5vh;
+  --Footer_Heigth: 8vh;
   --MainDim: 100%;
-  --Main_Heigth: calc(100vh - 10vh);
+  --Main_Heigth: calc(100vh - 13vh);
   --BodyWidth: 1440px;
-  --Container_W: 85%;
-  --Container_H: 83vh;
+  --Container_W: 1000px;
+  --Container_H: 75vh;
 }
 
 /* Altezze e dimensioni delle MacroAree */
@@ -21,6 +21,7 @@ body {
 nav {
   width: var(--HeaderDim);
   height: var(--Header_Heigth);
+  font-size: 0.75rem;
 }
 
 header {
@@ -43,7 +44,6 @@ footer {
 .container {
   min-width: var(--Container_W);
   height: var(--Container_H);
-  background-color: aliceblue;
 }
 
 /* Colori dei testi e delle icone */
@@ -52,7 +52,7 @@ footer {
   --MainColor: rgba(0, 0, 0, 1);
   --FooterColor: rgba(34, 34, 34, 1);
   --Text_primary: rgba(255, 255, 255, 1);
-  --Text_secondary: rgba(255, 0, 38, 1);
+  --Text_secondary: #ff0026;
   --Text_Contain: rgba(107, 118, 127, 1);
   --Text_Success: rgba(75, 200, 0, 1);
 }
@@ -60,7 +60,7 @@ footer {
 /* Dimensione per le icone */
 
 .icon_size {
-  font-size: 1.25rem;
+  /* font-size: 1rem; */
 }
 
 /* Proprietà Display flex */
@@ -76,9 +76,9 @@ footer {
 }
 
 .center_3 {
-    align-items: center;
+  align-items: center;
+  justify-content: flex-start;
 }
-
 
 /* Proprietà Float  */
 
@@ -89,52 +89,77 @@ footer {
   padding-right: 10px;
 }
 
-.pinco {
-  width: 250px;
-  height: calc(100% / 5);
-  position: relative;
-}
-
-.desc {
-    position: absolute;
-    background-color: rgba(211, 211, 211, 0.534);
-    width: 50%;
-    height: 15%;
-    bottom: 0%;
-    left: 0%;
-}
-
-.float {
-  float: right;
-}
-
-.float_l {
-  position: relative;
-  float: left;
-}
-
-.float_r {
-  float: right;
-}
-
 .col-20,
 .col-75 {
   background-color: var(--Text_Contain);
   border-radius: 5px;
+  color: var(--Text_primary);
+  font-weight: 100px;
+  width: max-content;
 }
 
 .col-20 {
-  width: 20%;
-  height: 100%;
+  height: 80%;
 }
+
+ .col-20 i {
+     padding: 0px 10px 0px 10px;
+ }
 
 .col-75 {
-  width: 75%;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80%;
+  margin-left: 25%;
+}
+
+.col-75 div {
+  padding-right: 5px;
+}
+
+.col-75 i {
+  padding-left: 5px;
+}
+
+/* Item interno a ogni colonna */
+
+.pinco {
+  font-weight: 200;
+  width: 230px;
+  height: calc(100% / 5);
+  position: relative;
+  margin-bottom: 10px;
+  color: var(--Text_primary);
+  font-size: 0.85rem;
+}
+
+/* Testo descrittivo interno di pinco pallo */
+
+.desc {
+  position: absolute;
+  background-color: rgba(211, 211, 211, 0.4);
+  width: max-content;
+  height: 15%;
+  bottom: 0%;
+  left: 0%;
+}
+
+.pinco img {
+  width: 100%;
   height: 100%;
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+.pinco i {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.pinco span {
+  padding-right: 10px;
+}
+
+.item_column {
+  padding-left: 10px;
+  height: 100%;
+  flex-direction: column;
 }
