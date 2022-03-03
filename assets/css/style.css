@@ -1,32 +1,53 @@
 /* Colori principali delle macro aree */
 :root {
-  --MainColor:rgba(0, 0, 0, 1);
-  --FooterColor: rgba(34, 34, 34, 1);
-  --FooterDim : 100%;
+  --FooterDim: 100%;
+  --HeaderDim:100%;
+  --Header_Heigth : 5vh;
+  --Footer_Heigth: 5vh;
+  --MainDim: 100%;
+  --Main_Heigth: calc(100vh - 10vh);
   --BodyWidth: 1440px;
+  --Container_W: 85%;
+  --Container_H: 83vh;
 }
 
+/* Altezze e dimensioni delle MacroAree */
+
 body {
-    min-width: var(--BodyWidth);
+  min-width: var(--BodyWidth);
+}
+
+header {
+  min-width: var(--HeaderDim);
+  height: var(--Header_Heigth);
+  background-color: var(--MainColor);
 }
 
 main {
-    min-width: var(--BodyWidth);
-    height: calc(100vh - 75px);
-    background-color: var(--MainColor);
+  min-width: var(--MainDim);
+  height: var(--Main_Heigth);
+  background-color: var(--MainColor);
 }
 
 footer {
-    background-color: var(--FooterColor);
-    min-width: 100%;
-    height: 75px;
+  background-color: var(--FooterColor);
+  min-width: var(--FooterDim);
+  height: var(--Footer_Heigth);
+}
+
+.container {
+  min-width: var(--Container_W);
+  height: var(--Container_H);
+  background-color: aliceblue;
 }
 
 /* Colori dei testi e delle icone */
 
 :root {
- --Text_primary : rgba(255, 255, 255, 1);
- --Text_secondary : rgba(255, 0, 38, 1);
- --Text_Contain : rgba(107, 118, 127, 1);
- --Text_Success : rgba(75, 200, 0, 1);
+  --MainColor: rgba(0, 0, 0, 1);
+  --FooterColor: rgba(34, 34, 34, 1);
+  --Text_primary: rgba(255, 255, 255, 1);
+  --Text_secondary: rgba(255, 0, 38, 1);
+  --Text_Contain: rgba(107, 118, 127, 1);
+  --Text_Success: rgba(75, 200, 0, 1);
 }
