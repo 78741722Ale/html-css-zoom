@@ -5,3 +5,61 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Margini e Padding comuni */
+
+.pt_1 {
+    padding-top: 1rem;
+}
+
+.pb_1 {
+    padding-top: 1rem;
+}
+
+.pl_1 {
+    padding-left: 1rem;
+}
+
+.pl_2 {
+    padding-left: 2rem;
+}
+
+.pr_1 {
+    padding-right: 1rem;
+}
+
+.pr_2 {
+    padding-right: 2rem;
+}
+
+/* Margini */
+
+.mt_1 {
+    padding-top: 1rem;
+}
+
+.mb_1 {
+    padding-top: 1rem;
+}
+
+.ml_1 {
+    padding-left: 1rem;
+}
+
+.ml_2 {
+    padding-left: 2rem;
+}
+
+.mr_1 {
+    padding-right: 1rem;
+}
+
+.mr_2 {
+    padding-right: 2rem;
+}
+
+/* Dimensione per le icone */
+
+.icon_size {
+    font-size: 1.5rem;
+}

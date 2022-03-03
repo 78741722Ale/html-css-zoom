@@ -1,0 +1,32 @@
+/* Colori principali delle macro aree */
+:root {
+  --MainColor:rgba(0, 0, 0, 1);
+  --FooterColor: rgba(34, 34, 34, 1);
+  --FooterDim : 100%;
+  --BodyWidth: 1440px;
+}
+
+body {
+    min-width: var(--BodyWidth);
+}
+
+main {
+    min-width: var(--BodyWidth);
+    height: calc(100vh - 75px);
+    background-color: var(--MainColor);
+}
+
+footer {
+    background-color: var(--FooterColor);
+    min-width: 100%;
+    height: 75px;
+}
+
+/* Colori dei testi e delle icone */
+
+:root {
+ --Text_primary : rgba(255, 255, 255, 1);
+ --Text_secondary : rgba(255, 0, 38, 1);
+ --Text_Contain : rgba(107, 118, 127, 1);
+ --Text_Success : rgba(75, 200, 0, 1);
+}
