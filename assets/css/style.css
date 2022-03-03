@@ -57,11 +57,6 @@ footer {
   --Text_Success: rgba(75, 200, 0, 1);
 }
 
-/* Dimensione per le icone */
-
-.icon_size {
-  /* font-size: 1rem; */
-}
 
 /* Proprietà Display flex */
 
@@ -92,14 +87,22 @@ footer {
 }
 
 .foot_item,
+.foot_item_center,
 .foot_box {
     height: 100%;
     align-items: center;
 }
 
-.foot_item {
-  width: 300px;
+.foot_item_left {
+  width: max-content;
   justify-content: flex-start;
+  background-color: #ff0026;
+  column-gap: 5px;
+}
+
+.foot_item_center {
+  width: max-content;
+  justify-content: center;
   background-color: #ff0026;
   column-gap: 5px;
 }
