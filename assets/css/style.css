@@ -57,7 +57,6 @@ footer {
   --Text_Success: rgba(75, 200, 0, 1);
 }
 
-
 /* Proprietà Display flex */
 
 .center {
@@ -86,52 +85,46 @@ footer {
   flex-direction: column;
 }
 
-.foot_item,
+.foot_item_left,
 .foot_item_center,
+.foot_item_right,
 .foot_box {
-    height: 100%;
-    align-items: center;
+  height: 100%;
+  align-items: center;
 }
 
 .foot_item_left {
   width: max-content;
   justify-content: flex-start;
-  background-color: #ff0026;
   column-gap: 5px;
 }
 
 .foot_item_center {
   width: max-content;
   justify-content: center;
-  background-color: #ff0026;
   column-gap: 5px;
 }
 
+.foot_item_right {
+  width: max-content;
+  justify-content: center;
+  background-color: var(--Text_Contain);
+  column-gap: 5px;
+}
+
+.End {
+  padding: 0px 20px 0px 20px;
+  color: red;
+}
+
 .foot_box {
-    padding: 0px 10px 0px 10px;
-    width:max-content;
-    flex-direction: column;
-    justify-content: center;
-    color: var(--Text_primary);
+  padding: 0px 10px 0px 10px;
+  width: max-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--Text_primary);
 }
-
-.foot_box i {
-    padding-bottom: 5px;
-}
-
-.foot_box span {
-    font-size: 0.8rem;
-}
-
-.foot_icon {
-  font-size: 2.0rem;
-}
-
-.foot_icon_sm {
-  font-size: 0.8rem;
-}
-
-
 
 /* Proprietà Float  */
 
@@ -163,7 +156,8 @@ footer {
   justify-content: flex-start;
   align-items: center;
   height: 80%;
-  margin-left: 25%;
+  margin-left: 15%;
+  padding: 0px 10px 0px 10px;
 }
 
 .col-75 div {

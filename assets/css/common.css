@@ -8,6 +8,22 @@
 
 /* Margini e Padding comuni */
 
+.foot_box i {
+  padding-bottom: 5px;
+}
+
+.foot_box span {
+  font-size: 0.8rem;
+}
+
+.foot_icon {
+  font-size: 2rem;
+}
+
+.foot_icon_sm {
+  font-size: 0.8rem;
+}
+
 .pt_1 {
   padding-top: 1rem;
 }
